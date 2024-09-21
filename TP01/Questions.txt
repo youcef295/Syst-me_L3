@@ -1,0 +1,13 @@
+Exercice 03:
+1 - Le nombre de processus crée est 2⁴-1 = 15 processus car chaque processus va cree un autre processus fils dans l'éxercice on a 4 fork()
+2 - Quand on remplace le premier appel à fork par un appel à exec exécutant le programme lui-même 
+on va avoir une boucle infine d'appel au programme lui meme et tout ce qui suit le execl() ne s'execute pas 
+3 - 
+
+Exercice 04 :
+
+1- Comparez les temps d’exécution et les affichages des programmes des deux questions précédentes.
+Que remarquez-vous ?
+Sans utiliser le fork : Temps d'exécution : 0.170287 secondes
+Avec l'utilisation du fork : Temps d'exécution : 0.098168 secondes
+donc c'est plis rapide avec le fork

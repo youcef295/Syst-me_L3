@@ -1,0 +1,16 @@
+exo02
+exo02.c
+exo03
+exo03.c
+exo04
+exo04.c
+exo05
+exo05.c
+exo06
+exo06.c
+exo07
+exo07.c
+Questions.txt
+stdout.txt
+td02-fork-e.pdf
+tp01
