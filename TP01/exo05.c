@@ -41,8 +41,8 @@ int main(void)
 {
     signal(SIGINT, fin_programme);
 
-    // test01();
-    test02();
+    test01();
+    //test02();
 
     return 0;
 }

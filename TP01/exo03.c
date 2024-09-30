@@ -5,15 +5,15 @@
 
 int first_fork()
 {
-    printf("Avant exec\n");
-
+    printf("Avant exec\n"); // Pour faire la vérification 
+    // On lance exec 
     if (execl("/home/boualili/Bureau/Système/TP01/exo03", "exo03", NULL) == -1)
     {
         perror("Erreur lors de exec");
         exit(EXIT_FAILURE);
     }
 
-    printf("Après exec \n");
+    printf("Après exec \n");// Pour faire la vérification 
     fork();
     fork();
     fork();
@@ -25,14 +25,14 @@ int first_fork()
 int second_fork()
 {
     fork();
-    printf("Avant exec\n");
+    printf("Avant exec\n");// Pour faire la vérification 
     if (execl("/home/boualili/Bureau/Système/TP01/exo03", "exo03", NULL) == -1)
     {
         perror("Erreur lors de exec");
         exit(EXIT_FAILURE);
     }
 
-    printf("Après exec \n");
+    printf("Après exec \n");// Pour faire la vérification 
     fork();
     fork();
 
@@ -41,7 +41,7 @@ int second_fork()
 
 int main(void)
 {
-    first_fork();
-    //second_fork();
+    //first_fork();
+    second_fork();
     return 0;
 }

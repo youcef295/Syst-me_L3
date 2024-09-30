@@ -68,8 +68,8 @@ int main(void)
         tableau[i] = rand() % 101;
     }
     clock_t start_time = clock();
-    first_try(tableau);
-    //fork_try(tableau);
+    //first_try(tableau);
+    fork_try(tableau);
     clock_t end_time = clock();
     float temps = (float)(end_time - start_time) / CLOCKS_PER_SEC;
     printf("Temps d'exécution : %f secondes\n", temps);
